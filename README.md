@@ -21,7 +21,7 @@ To add a styled checkbox:
 
 To change or create layout you need an html file inside `js/directives/styled-checkbox`
 
-named `checkbox-*.html` where * is your layout name (e.g. `checkbox-rounded`).
+named `checkbox-*.html` where `*` is your layout name (e.g. `checkbox-rounded`).
 
 The file should contain:
 ```html
