@@ -4,7 +4,6 @@ var myApp = angular.module('myApp', [])
 myApp.directive('styledCheckbox', function($compile) {
 
   var _layout_default = 'square';
-  var _color_default = 'blue';
 
   return {
     restrict: 'A',
@@ -14,12 +13,10 @@ myApp.directive('styledCheckbox', function($compile) {
 
       return 'js/directives/styled-checkbox/checkbox-' + layout + '.html';
     },
-
     link: function(scope, elem, attrs) {
-      scope.color = angular.isDefined(attrs.color) ? attrs.color : _color_default;
+      scope.checkbox = angular.isDefined(attrs.checked) ? true : false;
 
-      scope.master = angular.isDefined(attrs.checked) ? true : false;
-
+      // Take the div outside of the input element.
       var button = elem.find('div').clone();
       $compile(button)(scope);
 
@@ -27,7 +24,8 @@ myApp.directive('styledCheckbox', function($compile) {
       elem.after(button);
       elem.addClass('ng-hide');
 
-      scope.$watch('master', function(value) {
+      // Watch on the checkbox scope variable.
+      scope.$watch('checkbox', function(value) {
         if (value) {
           button.addClass('checked');
         }
@@ -36,8 +34,9 @@ myApp.directive('styledCheckbox', function($compile) {
         }
       });
 
+      // Toggle the checkbox.
       scope.toggleCheckbox = function() {
-        scope.master = !scope.master;
+        scope.checkbox = !scope.checkbox;
       }
     }
   }
