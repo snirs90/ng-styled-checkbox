@@ -17,7 +17,10 @@ To add a styled checkbox:
 <input type="checkbox" value="1" ng-checked="checkbox" styled-checkbox />
 ```
 
-## Options:
+## Attribute options:
+
+* `layout="rounded"` - to change the checkbox layout.
+* `checked` - to check the checkbox by default.
 
 To change or create layout you need an html file inside `js/directives/styled-checkbox`
 
