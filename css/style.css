@@ -1,0 +1,19 @@
+.checkbox {
+  width: 16px;
+  height: 16px;
+  background: url('../images/checkbox-unchecked.png') no-repeat;
+}
+
+.checkbox.checked {
+  background: url('../images/checkbox-checked.png') no-repeat;
+}
+
+.checkbox-normal {
+  width: 16px;
+  height: 16px;
+  background: url('../images/checkbox_normal-unchecked.png') no-repeat;
+}
+
+.checkbox-normal.checked {
+  background: url('../images/checkbox_normal-checked.png') no-repeat;
+}
