@@ -22,18 +22,18 @@ To add a styled checkbox:
 * `layout="rounded"` - to change the checkbox layout.
 * `checked` - to check the checkbox by default.
 
-To change or create layout you need an html file inside `js/directives/styled-checkbox`
+In order to change a layout you need an html file inside `js/directives/styled-checkbox`
 
 named `checkbox-*.html` where `*` is your layout name (e.g. `checkbox-rounded`).
 
 The file should contain:
 ```html
-<div class="checkbox-normal" ng-click="toggleCheckbox()"></div>
+<div class="your-css-class" ng-click="toggleCheckbox()"></div>
 ```
-where class is your css class with your style.
+where class is your css class with your unique style.
 
-The css should contain also a `checked` class that will append when the checkbox
-is checked and the style will change when checked.
+The css should contain also a `checked` class that will s append when the checkbox
+is checked so the checkbox will look as checked.
 
 Thats it!
 
