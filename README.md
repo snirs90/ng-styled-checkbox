@@ -1,5 +1,5 @@
 # ng-checkbox
-----
+
 Styled checkbox with an AngularJS directive
 
 ## Getting Started
@@ -20,6 +20,7 @@ To add a styled checkbox:
 ## Options:
 
 To change or create layout you need an html file inside `js/directives/styled-checkbox`
+
 named `checkbox-*.html` where * is your layout name (e.g. `checkbox-rounded`).
 
 The file should contain:
@@ -31,5 +32,5 @@ where class is your css class with your style.
 The css should contain also a `checked` class that will append when the checkbox
 is checked and the style will change when checked.
 
-Thats it! 
+Thats it!
 
