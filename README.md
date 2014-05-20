@@ -14,7 +14,7 @@ Add script source into your project
 To add a styled checkbox:
 
 ```html
-<input type="checkbox" value="1" ng-click="toggleCheckbox()" ng-checked="checkbox" styled-checkbox />
+<input type="checkbox" value="1" styled-checkbox ng-click="toggleCheckbox()" ng-checked="checkbox"  />
 ```
 
 ## Attribute options:
